@@ -112,7 +112,12 @@
 }
 
 .service {
-  background: linear-gradient(to right, rgba(47, 48, 58, 0.4) 100%, rgba(47, 48, 58, 0.4) 100%), url(../images/meeting.jpg);
+  background: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4) 100%,
+      rgba(47, 48, 58, 0.4) 100%
+    ),
+    url(../images/meeting.jpg);
 }
 .service__box {
   top: 80px;
@@ -239,7 +244,8 @@
 .team__image {
   background-color: white;
   border-radius: 4px;
-  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   width: 270px;
   height: 428px;
   margin-bottom: 94px;
@@ -700,7 +706,8 @@
   padding: 6px 22px;
   margin: 0 8px;
 }
-.button:hover, .button:focus {
+.button:hover,
+.button:focus {
   background-color: #2196f3;
   color: white;
   cursor: pointer;
@@ -715,7 +722,9 @@
   margin-bottom: 94px;
 }
 .portfolio li:hover {
-  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.1607843137), 0px 4px 4px 0px rgba(0, 0, 0, 0.0588235294), 0px 1px 1px 0px rgba(0, 0, 0, 0.1215686275);
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.1607843137),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.0588235294),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.1215686275);
   cursor: pointer;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -784,4 +793,4 @@ body {
   width: 1200px;
   margin: 0 auto;
   position: relative;
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
