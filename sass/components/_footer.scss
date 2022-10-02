@@ -1,0 +1,145 @@
+.footer {
+  background-color: $background-footer;
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+
+  &__container {
+    display: flex;
+  }
+
+  &__logo {
+    @include logo;
+    color: white;
+  }
+  &__color {
+    color: $brand-color;
+  }
+  &__wrap {
+    display: flex;
+  }
+}
+
+.address {
+  margin-top: 20px;
+  line-height: 1.5;
+
+  &__street {
+    color: $primary-color;
+  }
+  &__mail {
+    color: $primary-text;
+  }
+  &__telephone {
+    color: #757575;
+    letter-spacing: map-get($letter-spacing, links);
+    display: flex;
+  }
+}
+.join {
+  margin-left: 70px;
+  color: $primary-color;
+  letter-spacing: map-get($letter-spacing, link);
+  &__header {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: $primary-color;
+    margin-top: 12px;
+  }
+  &__icon {
+    display: flex;
+    list-style: none;
+    margin-top: 15px;
+  }
+  &__svg {
+    width: 44px;
+    height: 44px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  &__media {
+    width: 44px;
+    height: 44px;
+    background-color: $footer-icon;
+    border-radius: 50%;
+    margin-right: 10px;
+    fill: white;
+  }
+  &__media:hover {
+    background-color: $brand-color;
+    border-radius: 50%;
+    cursor: pointer;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.newsletter {
+  margin-left: 78px;
+  margin-right: 12px;
+  &__header {
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: $primary-color;
+    position: relative;
+    top: 12px;
+  }
+
+  &__list {
+    display: inline-block;
+  }
+  &__list li {
+    display: inline;
+    position: relative;
+    top: 30px;
+  }
+  &__email {
+    height: 50px;
+    width: 358px;
+    background-color: $background-footer;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding-left: 16px;
+    border-radius: 4px;
+    font-size: medium;
+    position: relative;
+    top: -1px;
+    outline: none;
+    color: var(--inative);
+  }
+  &__button {
+    height: 50px;
+    width: 200px;
+    background-color: $brand-color;
+    border-style: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px #00000026;
+    margin-top: 1px;
+  }
+  &__button:before {
+    content: "Zapisz się";
+    height: 30px;
+    display: inline-block;
+    position: relative;
+    font-size: 16px;
+    font-family: Roboto;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: white;
+  }
+  &__svg {
+    height: 24px;
+    width: 24px;
+    top: 5px;
+    position: relative;
+    margin-left: 24px;
+  }
+}

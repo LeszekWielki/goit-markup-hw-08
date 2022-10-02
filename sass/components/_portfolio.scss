@@ -1,0 +1,90 @@
+.buttons {
+  &__list {
+    display: flex;
+    justify-content: center;
+    margin-top: 94px;
+    margin-bottom: 50px;
+  }
+}
+
+.button {
+  font-size: 16px;
+  background-color: $background-card;
+  border-radius: 4px;
+  border-style: none;
+  font-weight: 500;
+  height: 38px;
+  text-align: center;
+
+  padding: 6px 22px;
+  margin: 0 8px;
+  &:hover,
+  &:focus {
+    background-color: $brand-color;
+    color: white;
+    @include transition-main;
+  }
+}
+
+.portfolio {
+  &__list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 94px;
+  }
+  & li:hover {
+    box-shadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #0000000f,
+      0px 1px 1px 0px #0000001f;
+    @include transition-main;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+  }
+  &__box {
+    width: 372px;
+    border: 1px solid #eeeeee;
+    position: relative;
+  }
+  &__parent {
+    position: relative;
+    overflow: hidden;
+    height: 294px;
+  }
+  &__bg {
+    position: absolute;
+    width: 372px;
+    height: 294px;
+    background: rgb(33, 150, 243, 0.9);
+    transform: translateY(101%);
+    transition: transform 500ms ease;
+  }
+  &__parent:hover &__bg {
+    transform: translateY(0);
+  }
+  &__bg p {
+    padding: 40px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: white;
+  }
+  &__caption {
+    padding: 20px 23px;
+  }
+  &__designation {
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    font-style: normal;
+  }
+}
+.section {
+  color: $primary-text;
+}

@@ -1,0 +1,110 @@
+.header {
+  border-bottom: 1px solid $header-line;
+}
+
+.first_div {
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+
+.logo {
+  @include logo;
+
+  &__first-color {
+    color: $brand-color;
+  }
+}
+
+.menu {
+  margin-left: 93px;
+}
+
+.navigation {
+  display: flex;
+  list-style: none;
+  @mixin nospace {
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__item-main::after {
+    content: "";
+    width: 54px;
+    height: 4px;
+    border-radius: 2px;
+    background: $brand-color;
+    position: absolute;
+    top: 77px;
+    left: 231px;
+  }
+  &__item-portfolio::after {
+    content: "";
+    width: 55px;
+    height: 4px;
+    border-radius: 2px;
+    background: $brand-color;
+    position: absolute;
+    top: 77px;
+    left: 331px;
+  }
+  &__name {
+    font-size: map-get($font-size, standard);
+    letter-spacing: map-get($letter-spacing, links);
+    text-decoration: none;
+    color: $black;
+    background-color: $primary-color;
+    margin-right: 46px;
+  }
+}
+
+.second-navigation {
+  justify-content: flex-end;
+  display: flex;
+  padding: 0;
+  text-decoration: none;
+  color: $black;
+  background-color: $primary-color;
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__item-mail {
+    margin-left: 321px;
+  }
+
+  &__name {
+    color: $primary-text;
+    letter-spacing: map-get($letter-spacing, links);
+    margin-right: 50px;
+    display: flex;
+  }
+
+  .second-navigation__name-tel {
+    margin-right: 0;
+  }
+
+  &__icon {
+    width: 26px;
+    height: 16px;
+    fill: $primary-text;
+    margin: 0%;
+  }
+}
+.second-navigation__name:hover > svg {
+  color: $brand-color;
+  fill: $brand-color;
+}
+// .first_div .second-navigation__icon:hover {
+//   color: red;
+//   fill: red;
+// }
+.first_div a:hover {
+  color: $brand-color;
+}

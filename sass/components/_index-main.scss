@@ -1,0 +1,229 @@
+.service {
+  background: linear-gradient(to right, #2f303a66 100%, #2f303a66 100%),
+    url(../images/meeting.jpg);
+  &__box {
+    top: 80px;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  &__description {
+    width: 696px;
+    margin: 0 auto;
+    color: white;
+    font-weight: 900;
+    font-size: 44px;
+    letter-spacing: 6px;
+  }
+  &__button {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    background: $brand-color;
+    cursor: pointer;
+    border-radius: 4px;
+    border-style: none;
+    margin-top: 30px;
+    width: 200px;
+    height: 50px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: white;
+  }
+}
+
+.solutions {
+  &__list {
+    display: flex;
+    justify-content: center;
+    //     list-style: none;
+    //   text-decoration: none;
+    //   color: black;
+  }
+  &__header {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.41px;
+    letter-spacing: 3%;
+    margin-bottom: 10px;
+  }
+  &__description {
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 3%;
+    text-align: left;
+    color: $primary-text;
+  }
+  &__box {
+    margin: 94px 15px;
+    max-width: 270px;
+    padding: 0, 15px;
+  }
+  &__icon {
+    width: 270px;
+    height: 120px;
+    padding: 25px 100px;
+    border-radius: 4px;
+    background: $background-card;
+    margin-bottom: 30px;
+  }
+}
+// HOW SECTION
+
+.how {
+  &__header {
+    font-family: "Roboto";
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+    justify-content: center;
+    text-align: center;
+    padding: 94px 0 50px 0;
+  }
+  &__list {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  &__item {
+    width: 370px;
+    height: 294px;
+    justify-content: center;
+    margin: 0 15px;
+    margin-bottom: 94px;
+    position: relative;
+  }
+  &__bg {
+    position: absolute;
+    top: 224px;
+    width: 370px;
+    padding: 27px 0;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    color: white;
+    background: rgba(47, 48, 58, 0.8);
+  }
+}
+
+// TEAM SECTION
+
+.team {
+  background-color: $background-card;
+  &__header {
+    font-family: "Roboto";
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+    justify-content: center;
+    text-align: center;
+    padding: 94px 0 50px 0;
+  }
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+  &__box {
+    margin: 0 15px;
+  }
+  &__image {
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    width: 270px;
+    height: 428px;
+    margin-bottom: 94px;
+  }
+}
+
+.box {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  &__name {
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  &__description {
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #757575;
+  }
+  &__icon {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 16px;
+  }
+  &__list {
+    margin: 16px 5px 30px 5px;
+  }
+  &__svg {
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    fill: $icon-bacground;
+  }
+  &__link {
+    width: 44px;
+    height: 44px;
+    background-color: #ffffff1a;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+}
+
+// OUR CLIENTS
+
+.clients {
+  &__header {
+    font-family: "Roboto";
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+    justify-content: center;
+    text-align: center;
+    padding: 94px 0 50px 0;
+  }
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  &__image {
+    margin: 0 15px 94px 15px;
+  }
+  &__svg {
+    width: 170px;
+    height: 92px;
+    border: 1px solid $icon-bacground;
+    border-radius: 4px;
+    padding: 16px 32px;
+    fill: $icon-bacground;
+  }
+  &__svg:hover {
+    color: $brand-color;
+    fill: $brand-color;
+    border: 1px solid $brand-color;
+    cursor: pointer;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
