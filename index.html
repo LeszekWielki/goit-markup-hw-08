@@ -27,7 +27,9 @@
                 <a class="navigation__name" href="./index.html">Agencja</a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__name" href="./portfolio.html">Portfolio</a>
+                <a class="navigation__name" href="./portfolio.html"
+                  >Portfolio</a
+                >
               </li>
               <li class="navigation__item">
                 <a class="navigation__name" href="./Kontakt">Kontakt</a>
@@ -35,9 +37,10 @@
             </ul>
           </nav>
           <ul class="second-navigation">
-            <li class="second-navigation__item
-            second-navigation__item-mail">
-              <a class="second-navigation__name" href="mailto:info@devstudio.com"
+            <li class="second-navigation__item second-navigation__item-mail">
+              <a
+                class="second-navigation__name"
+                href="mailto:info@devstudio.com"
                 ><svg class="second-navigation__icon">
                   <use href="./images/icons.svg#icon-mail"></use>
                 </svg>
@@ -45,8 +48,9 @@
               >
             </li>
             <li class="second-navigation__item">
-              <a class="second-navigation__name
-              second-navigation__name-tel" href="tel:+48111111111"
+              <a
+                class="second-navigation__name second-navigation__name-tel"
+                href="tel:+48111111111"
                 ><svg class="second-navigation__icon">
                   <use href="./images/icons.svg#icon-telephone"></use>
                 </svg>
@@ -64,7 +68,12 @@
             <h1 class="service__description">
               EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
             </h1>
-            <button class="service__button" type="button" data-modal-open>
+            <button
+              class="service__button"
+              aria-label="order the service"
+              type="button"
+              data-modal-open
+            >
               Zamów usługe
             </button>
           </div>
@@ -438,7 +447,9 @@
                 >info@example.com</a
               >
               <br />
-              <a class="address__telephone" href="tel:+48111111111"> +48 111 111 111</a>
+              <a class="address__telephone" href="tel:+48111111111">
+                +48 111 111 111</a
+              >
             </address>
           </div>
           <div class="join">
@@ -486,17 +497,20 @@
                     placeholder="E-mail"
                   />
                 </label>
-                <li>
-                  <button type="submit" class="newsletter__button">
-                
-                    <svg class="newsletter__svg">
-                      <use
-                        class="newsletter__send"
-                        href="./images/icons.svg#icon-send"
-                      ></use>
-                    </svg>
-                  </button>
-                </li>
+              </li>
+              <li>
+                <button
+                  type="submit"
+                  aria-label="send e-mail"
+                  class="newsletter__button"
+                >
+                  <svg class="newsletter__svg">
+                    <use
+                      class="newsletter__send"
+                      href="./images/icons.svg#icon-send"
+                    ></use>
+                  </svg>
+                </button>
               </li>
             </ul>
           </div>
@@ -506,7 +520,12 @@
 
     <div class="backdrop is-hidden" data-modal>
       <form class="modal" name="singup-form" validate autocomplete="on">
-        <button type="button" class="modal__button" data-modal-close>
+        <button
+          type="button"
+          aria-label="close the modal window"
+          class="modal__button"
+          data-modal-close
+        >
           <svg class="modal__x icon-x">
             <use href="./images/icons.svg#icon-x"></use>
           </svg>
@@ -518,7 +537,8 @@
             <svg class="form__svg form__svg-name">
               <use
                 class="form__use"
-                href="./images/icons.svg#icon-person-black"></use>
+                href="./images/icons.svg#icon-person-black"
+              ></use>
             </svg>
             <input
               class="form__label"
@@ -548,9 +568,12 @@
           <p class="form__name">Email</p>
           <label class="form__box">
             <svg class="form__svg form__svg-mail">
-              <use class="icon-svgg" href="./images/icons.svg#icon-mail-2"></use>
+              <use
+                class="icon-svgg"
+                href="./images/icons.svg#icon-mail-2"
+              ></use>
             </svg>
-            
+
             <input
               class="form__label"
               type="email"
@@ -561,7 +584,6 @@
           </label>
           <p class="form__name">Komentarz</p>
           <label class="form__commentary">
-           
             <textarea
               class="input-comment form__label-commentary"
               type="text"
@@ -571,22 +593,28 @@
               resize="none"
             ></textarea>
           </label>
-          
+
           <div>
-            
             <label class="form__checkbox-modal" for="checkbox-modal">
-              
-            
-            <input type="checkbox" name="checkbox" id="checkbox-label" class="form__checkbox-label "
-               /> 
-               <svg class="form__checkbox-svg">
+              <input
+                type="checkbox"
+                name="checkbox"
+                id="checkbox-label"
+                class="form__checkbox-label"
+              />
+              <svg class="form__checkbox-svg">
                 <use href="./images/icons.svg#icon-icon-check"></use>
               </svg>
-               <p class="form__checkbox-statement">Oświadczam iż akceptuję <a href="Regulamin">Regulamin</a> i <a href="Polityka Prywatności">Politykę Prywatności</a>.</p>
-             </label>  
+              <p class="form__checkbox-statement">
+                Oświadczam iż akceptuję <a href="Regulamin">Regulamin</a> i
+                <a href="Polityka Prywatności">Politykę Prywatności</a>.
+              </p>
+            </label>
           </div>
         </div>
-        <button class="form__submit" type="submit">Wyślij</button>
+        <button class="form__submit" aria-label="send" type="submit">
+          Wyślij
+        </button>
       </form>
     </div>
     <script src="./js/modal.js"></script>

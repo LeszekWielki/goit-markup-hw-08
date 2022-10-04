@@ -108,3 +108,11 @@
 .first_div a:hover {
   color: $brand-color;
 }
+
+@media screen and (min-width: 480px) {
+  .first_div {
+    display: none;
+    align-items: center;
+    height: 60px;
+  }
+}

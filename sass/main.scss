@@ -18,3 +18,20 @@ body {
   @include center;
   position: relative;
 }
+
+@media screen and (min-width: 400px) and (max-width: 768px) {
+  .container {
+    @include center;
+    position: relative;
+    min-width: 320px;
+    width: 400px;
+  }
+  .body {
+    @include nonspace;
+    font-family: $standard-font;
+    font-weight: map-get($font-weight, medium);
+    font-size: map-get($font-size, standard);
+    box-sizing: border-box;
+    width: 768px;
+  }
+}
