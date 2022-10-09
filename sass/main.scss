@@ -19,7 +19,7 @@ body {
   width: 1200px;
 }
 
-@media screen and (min-width: 400px) and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
   .container {
     @include center;
     position: relative;
