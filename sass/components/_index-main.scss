@@ -235,9 +235,31 @@
       justify-content: center;
     }
     &__box {
-      margin: 60px 15px;
+      margin: 0;
+      padding: 0;
       justify-content: center;
       text-align: center;
+      width: 450px;
+    }
+    &__item {
+      margin: 0 15px;
+      width: 450px;
+      margin-top: 60px;
+      margin-bottom: 30px;
+    }
+    &__icon {
+      width: 768px;
+      max-width: 450px;
+    }
+    &__header {
+      justify-content: center;
+      align-items: center;
+      width: 768px;
+      max-width: 450px;
+    }
+    &__description {
+      width: 768px;
+      max-width: 450px;
     }
   }
   .how {
@@ -264,7 +286,7 @@
   .service {
     height: 400px;
     &__description {
-      min-width: 365px;
+      width: 395px;
       height: 84px;
       color: white;
       font-weight: 900;
