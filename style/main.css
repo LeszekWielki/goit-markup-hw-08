@@ -546,7 +546,6 @@
   .footer {
     justify-content: center;
     text-align: center;
-    display: none;
   }
   .footer__wrap {
     display: grid;
