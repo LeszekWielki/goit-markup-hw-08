@@ -379,6 +379,7 @@
   }
   .service {
     height: 400px;
+    max-width: 768px;
   }
   .service__description {
     width: 395px;
@@ -932,7 +933,7 @@ body {
     margin: 0 auto;
     position: relative;
     min-width: 320px;
-    width: 400px;
+    max-width: 400px;
   }
   .body {
     margin: 0;
@@ -942,5 +943,10 @@ body {
     font-size: 14px;
     box-sizing: border-box;
     width: 768px;
+  }
+  * img {
+    display: block;
+    max-width: 100%;
+    height: auto;
   }
 }/*# sourceMappingURL=main.css.map */

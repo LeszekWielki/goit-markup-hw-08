@@ -24,7 +24,7 @@ body {
     @include center;
     position: relative;
     min-width: 320px;
-    width: 400px;
+    max-width: 400px;
   }
   .body {
     @include nonspace;
@@ -33,5 +33,12 @@ body {
     font-size: map-get($font-size, standard);
     box-sizing: border-box;
     width: 768px;
+  }
+  * {
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
   }
 }
