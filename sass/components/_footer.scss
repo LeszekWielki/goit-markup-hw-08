@@ -88,8 +88,8 @@
     letter-spacing: 0.03em;
     text-align: left;
     color: $primary-color;
-    position: relative;
-    top: 12px;
+    position: -webkit-sticky;
+    margin-top: 12px;
   }
 
   &__list {
@@ -109,9 +109,9 @@
     border-radius: 4px;
     font-size: medium;
     position: relative;
-    top: -1px;
     outline: none;
     color: var(--inative);
+    margin-top: 12px;
   }
   &__button {
     height: 50px;
@@ -144,8 +144,48 @@
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
   .footer {
+    justify-content: center;
+    text-align: center;
     display: none;
+    &__wrap {
+      display: grid;
+      justify-content: center;
+      text-align: center;
+    }
+    &__logo {
+      justify-content: center;
+    }
+  }
+  .join {
+    text-align: center;
+    justify-content: center;
+    display: grid;
+    margin: 0;
+    &__header {
+      text-align: center;
+      margin-top: 60px;
+      margin-bottom: 20px;
+    }
+    &__icon {
+      margin-top: 0;
+    }
+  }
+  .address {
+    &__telephone {
+      display: grid;
+    }
+  }
+  .newsletter {
+    margin: 0;
+    &__header {
+      text-align: center;
+      margin-top: 60px;
+      margin-bottom: 5px;
+    }
+    &__button {
+      margin-top: 20px;
+    }
   }
 }

@@ -23,7 +23,7 @@
           >
           <nav class="menu">
             <ul class="navigation">
-              <li class="navigation__item navigation__item-main">
+              <li class="navigation__item navigation__item--main">
                 <a class="navigation__name" href="./index.html">Agencja</a>
               </li>
               <li class="navigation__item">
@@ -487,32 +487,28 @@
           </div>
           <div class="newsletter">
             <h4 class="newsletter__header">WPISZ SIE DO NEWSLETTERA</h4>
-            <ul class="newsletter__list">
-              <li>
-                <label class="newsletter__label">
-                  <input
-                    class="newsletter__email"
-                    type="email"
-                    name="mail"
-                    placeholder="E-mail"
-                  />
-                </label>
-              </li>
-              <li>
-                <button
-                  type="submit"
-                  aria-label="send e-mail"
-                  class="newsletter__button"
-                >
-                  <svg class="newsletter__svg">
-                    <use
-                      class="newsletter__send"
-                      href="./images/icons.svg#icon-send"
-                    ></use>
-                  </svg>
-                </button>
-              </li>
-            </ul>
+            <div class="newsletter__list">
+              <label class="newsletter__label">
+                <input
+                  class="newsletter__email"
+                  type="email"
+                  name="mail"
+                  placeholder="E-mail"
+                />
+              </label>
+              <button
+                type="submit"
+                aria-label="send e-mail"
+                class="newsletter__button"
+              >
+                <svg class="newsletter__svg">
+                  <use
+                    class="newsletter__send"
+                    href="./images/icons.svg#icon-send"
+                  ></use>
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </div>

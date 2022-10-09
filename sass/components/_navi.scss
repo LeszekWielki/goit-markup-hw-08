@@ -41,7 +41,7 @@
     top: 77px;
     left: 231px;
   }
-  &__item-portfolio::after {
+  &__item--portfolio::after {
     content: "";
     width: 55px;
     height: 4px;
@@ -109,10 +109,8 @@
   color: $brand-color;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
   .first_div {
     display: none;
-    align-items: center;
-    height: 60px;
   }
 }

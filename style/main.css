@@ -51,7 +51,7 @@
   top: 77px;
   left: 231px;
 }
-.navigation__item-portfolio::after {
+.navigation__item--portfolio::after {
   content: "";
   width: 55px;
   height: 4px;
@@ -111,11 +111,9 @@
   color: #2196f3;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
   .first_div {
     display: none;
-    align-items: center;
-    height: 60px;
   }
 }
 .service {
@@ -332,13 +330,15 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 400px) and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
   .solutions__list {
     display: grid;
     justify-content: center;
   }
   .solutions__box {
     margin: 60px 15px;
+    justify-content: center;
+    text-align: center;
   }
   .how__list {
     display: grid;
@@ -359,7 +359,7 @@
     height: 400px;
   }
   .service__description {
-    width: auto;
+    min-width: 365px;
     height: 84px;
     color: white;
     font-weight: 900;
@@ -466,8 +466,8 @@
   letter-spacing: 0.03em;
   text-align: left;
   color: #fff;
-  position: relative;
-  top: 12px;
+  position: -webkit-sticky;
+  margin-top: 12px;
 }
 .newsletter__list {
   display: inline-block;
@@ -486,9 +486,9 @@
   border-radius: 4px;
   font-size: medium;
   position: relative;
-  top: -1px;
   outline: none;
   color: var(--inative);
+  margin-top: 12px;
 }
 .newsletter__button {
   height: 50px;
@@ -520,9 +520,47 @@
   margin-left: 24px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
   .footer {
+    justify-content: center;
+    text-align: center;
     display: none;
+  }
+  .footer__wrap {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+  }
+  .footer__logo {
+    justify-content: center;
+  }
+  .join {
+    text-align: center;
+    justify-content: center;
+    display: grid;
+    margin: 0;
+  }
+  .join__header {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+  .join__icon {
+    margin-top: 0;
+  }
+  .address__telephone {
+    display: grid;
+  }
+  .newsletter {
+    margin: 0;
+  }
+  .newsletter__header {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 5px;
+  }
+  .newsletter__button {
+    margin-top: 20px;
   }
 }
 .backdrop {
@@ -736,6 +774,30 @@
   cursor: pointer;
 }
 
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid 1px grey;
+    border-radius: 4px;
+    padding: 40px;
+  }
+  .form__label {
+    max-width: 100%;
+  }
+  .form__label-commentary {
+    max-width: 100%;
+  }
+  .form__submit {
+    text-align: center;
+    position: relative;
+  }
+}
 .buttons__list {
   display: flex;
   justify-content: center;
@@ -835,9 +897,9 @@ body {
 }
 
 .container {
-  width: 1200px;
   margin: 0 auto;
   position: relative;
+  width: 1200px;
 }
 
 @media screen and (min-width: 400px) and (max-width: 768px) {
