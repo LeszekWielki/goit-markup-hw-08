@@ -355,6 +355,7 @@
     text-align: center;
     max-width: 768px;
     background-color: #f5f4fa;
+    border-radius: 4px;
   }
   .solutions__item {
     margin: 0 15px;
