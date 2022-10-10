@@ -241,4 +241,12 @@
   .mobile {
     display: none;
   }
+  .second-navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .second-navigation__item {
+    margin-left: 0px;
+  }
 }
