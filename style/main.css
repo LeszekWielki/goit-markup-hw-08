@@ -233,7 +233,7 @@
     color: #2196f3;
   }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 769px) and (max-width: 1600px) {
   .header__mobile {
     display: none;
   }
@@ -545,7 +545,7 @@
     background-color: none;
   }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 769px) and (max-width: 1600px) {
   .solutions {
     width: 769px;
   }
@@ -614,6 +614,9 @@
     margin: 0;
   }
   .team__image {
+    width: 354px;
+  }
+  .team__image img {
     width: 354px;
   }
   .clients {
@@ -1254,7 +1257,7 @@ body {
     height: auto;
   }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 769px) and (max-width: 1600px) {
   .container {
     width: 768px;
   }

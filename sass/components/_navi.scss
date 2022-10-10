@@ -234,7 +234,7 @@
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 769px) and (max-width: 1600px) {
   .header__mobile {
     display: none;
   }

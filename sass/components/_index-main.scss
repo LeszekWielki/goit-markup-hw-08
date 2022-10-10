@@ -329,7 +329,7 @@
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 769px) and (max-width: 1600px) {
   .solutions {
     width: 769px;
     &__list {
@@ -397,6 +397,9 @@
       margin: 0;
     }
     &__image {
+      width: 354px;
+    }
+    &__image img {
       width: 354px;
     }
   }
