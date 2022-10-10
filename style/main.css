@@ -160,6 +160,78 @@
   .mobile.is-open {
     transform: translateX(0);
   }
+  .menu-toggle {
+    min-height: 19px;
+    min-width: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    fill: #212121;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+  }
+  .mobile__menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .mobile__menu-link {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    color: #212121;
+  }
+  .mobile__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+    margin: 0;
+    padding: 0;
+  }
+  .mobile__contact {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .mobile__contact-phone {
+    font-size: 34px;
+    color: #2196f3;
+  }
+  .mobile__contact-mail {
+    font-size: 24px;
+    color: #757575;
+  }
+  .mobile__social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+  }
+  .mobile__social-link {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: #2196f3;
+  }
 }
 .service {
   background: linear-gradient(to right, rgba(47, 48, 58, 0.4) 100%, rgba(47, 48, 58, 0.4) 100%), url(../images/meeting.jpg);
@@ -448,7 +520,7 @@
     font-weight: 900;
     font-size: 26px;
     letter-spacing: 3px;
-    line-height: 42px;
+    line-height: 32px;
     text-align: center;
   }
   .service__box {
