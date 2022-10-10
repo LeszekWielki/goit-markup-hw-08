@@ -111,13 +111,17 @@
   color: #2196f3;
 }
 
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .first_div {
     display: none;
   }
 }
 .service {
   background: linear-gradient(to right, rgba(47, 48, 58, 0.4) 100%, rgba(47, 48, 58, 0.4) 100%), url(../images/meeting.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
 }
 .service__box {
   top: 80px;
@@ -126,6 +130,12 @@
   justify-content: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  border-radius: 4px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
 }
 .service__description {
   width: 696px;
@@ -330,7 +340,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .solutions__list {
     display: grid;
     justify-content: center;
@@ -379,7 +389,10 @@
   }
   .service {
     height: 400px;
-    max-width: 768px;
+    background-size: cover;
+    background: linear-gradient(to right, rgba(47, 48, 58, 0.4) 100%, rgba(47, 48, 58, 0.4) 100%), url(../images/metting1.jpg);
+    justify-content: center;
+    align-items: center;
   }
   .service__description {
     width: 395px;
@@ -395,6 +408,7 @@
     display: inline-block;
     margin: 118px 0;
     padding: 0;
+    background-color: none;
   }
 }
 .footer {
@@ -543,7 +557,7 @@
   margin-left: 24px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .footer {
     justify-content: center;
     text-align: center;
@@ -796,7 +810,7 @@
   cursor: pointer;
 }
 
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .modal {
     width: 450px;
     height: 609px;
@@ -928,12 +942,14 @@ body {
   width: 1200px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .container {
     margin: 0 auto;
-    position: relative;
-    min-width: 320px;
-    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .body {
     margin: 0;
@@ -943,6 +959,11 @@ body {
     font-size: 14px;
     box-sizing: border-box;
     width: 768px;
+  }
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
   }
   * img {
     display: block;
