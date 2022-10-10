@@ -22,7 +22,7 @@
     justify-content: center;
   }
   &__description {
-    width: 696px;
+    // width: 696px;
     margin: 0 auto;
     color: white;
     font-weight: 900;
@@ -242,36 +242,41 @@
 
 @media screen and (max-width: 768px) {
   .solutions {
+    width: 100%;
+    // padding: 0 15px;
     &__list {
-      display: grid;
+      display: flex;
       justify-content: center;
+      flex-direction: column;
     }
     &__box {
       margin: 0;
       padding: 0;
       justify-content: center;
       text-align: center;
-      width: 450px;
+      max-width: 768px;
+      background-color: #f5f4fa;
     }
     &__item {
       margin: 0 15px;
-      width: 450px;
       margin-top: 60px;
       margin-bottom: 30px;
     }
     &__icon {
-      width: 768px;
-      max-width: 450px;
+      // width: 768px;
+      // max-width: 450px;
+      margin-bottom: 0;
     }
     &__header {
       justify-content: center;
       align-items: center;
-      width: 768px;
-      max-width: 450px;
+      text-align: center;
+      max-width: 768px;
+      margin-top: 30px;
     }
     &__description {
-      width: 768px;
-      max-width: 450px;
+      max-width: 768px;
+      text-align: center;
     }
   }
   .how {
