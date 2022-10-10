@@ -8,21 +8,18 @@
 
   &__box {
     top: 80px;
-    display: block;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     padding-top: 200px;
     padding-bottom: 200px;
     border-radius: 4px;
     // height: 120px;
     width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
   }
   &__description {
-    // width: 696px;
+    width: 100%;
     margin: 0 auto;
     color: white;
     font-weight: 900;
@@ -306,12 +303,12 @@
     background-size: cover;
     background: linear-gradient(to right, #2f303a66 100%, #2f303a66 100%),
       url(../images/metting1.jpg);
-    // width: 480px;
+    width: none;
+
     justify-content: center;
     align-items: center;
 
     &__description {
-      width: 395px;
       height: 84px;
       color: white;
       font-weight: 900;

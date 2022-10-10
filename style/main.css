@@ -125,19 +125,17 @@
 }
 .service__box {
   top: 80px;
-  display: block;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   padding-top: 200px;
   padding-bottom: 200px;
   border-radius: 4px;
   width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: center;
 }
 .service__description {
+  width: 100%;
   margin: 0 auto;
   color: white;
   font-weight: 900;
@@ -395,11 +393,11 @@
     height: 400px;
     background-size: cover;
     background: linear-gradient(to right, rgba(47, 48, 58, 0.4) 100%, rgba(47, 48, 58, 0.4) 100%), url(../images/metting1.jpg);
+    width: none;
     justify-content: center;
     align-items: center;
   }
   .service__description {
-    width: 395px;
     height: 84px;
     color: white;
     font-weight: 900;
@@ -567,17 +565,21 @@
     text-align: center;
   }
   .footer__wrap {
-    display: grid;
+    display: flex;
     justify-content: center;
     text-align: center;
+    flex-direction: column;
+    align-items: center;
   }
   .footer__logo {
     justify-content: center;
   }
   .join {
-    text-align: center;
+    display: flex;
     justify-content: center;
-    display: grid;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
     margin: 0;
   }
   .join__header {
@@ -589,10 +591,16 @@
     margin-top: 0;
   }
   .address__telephone {
-    display: grid;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
   }
   .newsletter {
     margin: 0;
+    display: block;
+    width: 100%;
   }
   .newsletter__header {
     text-align: center;
@@ -601,6 +609,18 @@
   }
   .newsletter__button {
     margin-top: 20px;
+  }
+  .newsletter__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .newsletter__label {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .newsletter__email {
+    width: 100%;
   }
 }
 .backdrop {
