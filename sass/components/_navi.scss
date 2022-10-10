@@ -110,7 +110,13 @@
 }
 
 @media screen and (max-width: 768px) {
-  .first_div {
+  .menu {
     display: none;
+  }
+  .second-navigation {
+    display: none;
+  }
+  .logo {
+    margin-left: 15px;
   }
 }
