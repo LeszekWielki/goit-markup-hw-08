@@ -620,9 +620,6 @@
   .team__image img {
     width: 354px;
   }
-  .clients {
-    width: 768px;
-  }
   .clients__list {
     display: flex;
     justify-content: center;
